@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcelona squad 2015</title>
+    <link href="./bootstrap/css/bootstrap.css"
+    rel="stylesheet">
+
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+    background-image:
+    linear-gradient(rgba(0,0,0,0.5),
+  rgba(0,0,0,0.5)),
+    url(./images/bg.JPG);
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
+    input{
+        border: none;
+        width: 100%;
+    }
+.main-div{
+ margin-top: 57px;
+ background-color: aliceblue;
+ color: #000;
+ padding: 30px;
+ border-radius: 20px;
+}
+dt{
+    font-size: 25px;
+}
+dd{
+    color: rgb(20, 20, 129);
+    font-weight: 700;
+}
+.coachdiv img{
+    border-radius: 50px;
+}
+.coachdiv p{
+font-weight: 700;
+}
+#inputdivp{
+    color: rgb(158, 8, 8);
+    font-size: 20px;
+    display: none;
+    text-decoration: underline;
+}
+#playerD{
+color: rgb(158, 8, 8);
+font-size: 25px;
+display: none;
+}
+
+@media (max-width: 600px) {
+    .topdiv{
+        margin-top: 50px;
+    }
+    .main-div dt{
+        font-size: 20px;
+    }
+}
+</style>
+<body>
+    <div class="container text-white">
+<div class="col-md-7 pt-3 topdiv mx-auto">  
+    <h2 class="text-center">Barcelona Squad 2015</h2>
+    <div class="inputdiv">
+<p id="inputdivp">Search for a player!</p>
+    <input type="text" id="input" 
+    placeholder="Search For Players....Messi,Neymar,Suarez,Iniesta"
+    class="py-2 px-5">
+
+    <div class="mt-3 mx-auto text-center">
+        <button
+    class="btn w-50 btn-primary py-2 px-3 rounded-0"
+    id="clickbtn">Search</button>
+    </div>
+</div>
+</div>
+
+<div class= "text-center py-auto">
+  <p id="playerD">Player Not Found</p>
+</div>
+
+<div class="row main-div">
+   
+    <div class="col-md-6">
+<img src="./images/bg-barca.png" 
+class="img-fluid"
+ id="images"
+ alt="">
+    </div>
+    <div class="col-md-6">
+        <div class="row" style="justify-content: space-evenly;">
+            <div class="col-5">
+                <dl>
+                    <dt>Full Name</dt>
+                    <dd id="name">
+                 
+                    </dd>
+                </dl>
+
+                <dl>
+                    <dt>Position</dt>
+                    <dd id="position">
+                
+                    </dd>
+                </dl>
+        
+                <dl>
+                    <dt>Age</dt>
+                    <dd id="age">
+                  
+                    </dd>
+                </dl>   
+        <dl>
+            <dt>Country</dt>
+            <dd id="country">
+            
+            </dd>
+        </dl>
+            </div>
+
+
+            <div class="col-5">
+                
+        <dl>
+            <dt>Height</dt>
+            <dd id="height">
+            
+            </dd>
+        </dl>
+
+
+        <dl>
+            <dt>Shirt Number</dt>
+            <dd id="shirt">
+            
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>weak foot</dt>
+            <dd id="foot">
+            
+            </dd>
+        </dl>
+
+        <dl>
+            <dt>Other Positions</dt>
+            <dd id="fullN">
+       
+            </dd>
+        </dl>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="coachdiv container text-white text-right mt-3">
+    <img src="./images/enrique.JPG" 
+    width="70"
+    alt="">
+    <p>Coach: Luiz Enrique</p>
+</div>
+    </div>
+
+<audio autoplay>
+    <source src="./barca.mp3" type="audio/wav"/>
+</audio>
+
+<script src="./barca.js"></script>
+</body>
+</html>
